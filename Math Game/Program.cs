@@ -18,23 +18,24 @@ var gameSelected = Console.ReadLine();
 
 if (gameSelected.Trim().ToLower() == "a")
 {
-    Console.WriteLine("Addition game selected");
+    AdditionGame("Addition game selected");
 }
 else if (gameSelected.Trim().ToLower() == "s")
 {
-    Console.WriteLine("Subtraction game selected");
+    SubtractionGame("Subtraction game selected");
 
 }
 else if (gameSelected.Trim().ToLower() == "m")
 {
-    Console.WriteLine("Multiplication game selected");
+    MultiplicationGame("Multiplication game selected");
 }
 else if (gameSelected.Trim().ToLower() == "d")
 {
-    Console.WriteLine("Division game selected");
+    DivisionGame("Division game selected");
 }
 else if (gameSelected.Trim().ToLower() == "q")
 {
+
     Console.WriteLine("Goodbye");
     Environment.Exit(1);
 }
@@ -42,4 +43,24 @@ else
 {
     Console.WriteLine("Game will now close");
     Environment.Exit(2);
+}
+
+void DivisionGame(string message)
+{
+    Console.WriteLine(message);
+}
+
+void MultiplicationGame(string message)
+{
+    Console.WriteLine(message);
+}
+
+void SubtractionGame(string message)
+{
+    Console.WriteLine(message);
+}
+
+void AdditionGame(string message)
+{
+    Console.WriteLine(message);
 }
